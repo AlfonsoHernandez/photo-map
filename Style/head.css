@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.header{
+    background: white;
+    text-align: center;
+    border-bottom: solid 2px black;
+    width: 100%;
+}
+.head-title{
+    font-size: 55px;
+    font-family: 'Pacifico', cursive;
+}
+.head-sub{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.head-sub span{
+    font-size: 14px;
+}

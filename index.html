@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">
+        <link href="Style/map-section.css" rel="stylesheet">
+        <link href="Style/head.css" rel="stylesheet">
+        <script src="conts.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="header">
+            <div class="head-title">PhotoMap</div>
+            <div class="head-sub">Travel <span>&#9679</span> Shoot <span>&#9679</span> Share</div>
+        </div>
+        <div class="map-container">
+             <div id="map"></div>
+        </div>
+        <script>
+            var map;
+            document.write("<script async defer src='" + mapSrc +"'<" + "/script>");
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 9,
+                    center: new google.maps.LatLng(37.765883, -122.352319),
+                    mapTypeId: 'roadmap'
+                });
+            }
+            
+        </script>
+    </script>
+    </body>
+</html>

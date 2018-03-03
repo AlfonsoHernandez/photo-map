@@ -1,0 +1,14 @@
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;    
+}
+
+.map-container{
+    
+}
+#map{
+    width: 100%;
+    height: 450px;
+    border: solid 20px white;
+}

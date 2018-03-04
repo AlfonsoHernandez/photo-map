@@ -16,7 +16,7 @@
         </div>
         <script>
             var map;
-            document.write("<script async defer src='" + mapSrc +"'<" + "/script>");
+            document.write("<script async defer src='" + mapSrc +"'>"+"<"+ "/script>");
             function initMap() {
                 map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 9,
@@ -24,7 +24,6 @@
                     mapTypeId: 'roadmap'
                 });
             }
-            
         </script>
     </body>
 </html>

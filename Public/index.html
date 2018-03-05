@@ -1,6 +1,7 @@
 <html>
     <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
     <link href="Style/map-section.css" rel="stylesheet">
     <link href="Style/head.css" rel="stylesheet">
     <script src="conts.js"></script>
@@ -8,30 +9,7 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo-container">
-            <div class="logo">
-                <div class="head-title">PhotoMap</div>
-                <!--<div class="head-sub">Travel <span>&#9679</span> Shoot <span>&#9679</span> Share</div>-->
-            </div>
-        </div>
-        <div class="nav-container">
-            <div class="nav">
-                <a href="#">Log In</a>
-                <a href="#">Sign Up</a>
-            </div>
-        </div>
-        <div class="header-large-text">
-            Travel. Shoot. Share.
-        </div>
-        <div class="header-small-text">
-            Discover your next adventure.
-        </div>
-        <div class="header-search-bar">
-            <input id="header-search" type="text" placeholder="Try &quot;San Francisco&quot;">
-            <img src="Icons/search.png" class="search-icon">
-            <button onclick="alert('search')">Search</button>
-        </div>
+    <div id="head">
     </div>
     <div class="content">
         <div class="body-title">
@@ -79,6 +57,10 @@
                 map: map
             });
         }
+    </script>
+    <script>
+        import React from 'react';
+        import ReactDOM from 'react-dom';
     </script>
 </body>
 </html>

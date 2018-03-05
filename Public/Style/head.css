@@ -53,33 +53,50 @@ body{
     margin-right: 10px;
     font-size: 16px;
 }
+.nav button{
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    background: none;
+}
+.nav button:hover{
+    cursor: pointer;
+}
 
 .header-large-text{
     font-size: 80px;
     margin-top: 130px;
+    font-size: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header-small-text{
     font-size: 40px;
     margin-top: 20px;
 }
+input{
+    border-radius: 5px;
+    border: solid 1px gray;
+}
 .header-search-bar input{
     width: 100%;
     height: 60px;
-    border-radius: 5px;
-    border: none;
     margin-top: 50px;
     font-size: 16px;
+    border: none;
 
 }
 
-input[type=text]{
-    padding-right: 30px;
+
+.header-search-bar input[type=text]{
+    padding:0px 60px;
 }
 
 #header-search::placeholder{
     color: gray;
-    padding-left: 60px;
 }
 .header-search-bar{
     width: 600px;
@@ -90,14 +107,14 @@ input[type=text]{
     font-size: 18px;
     border: none;
     background: #bdebd7;
-    border-radius: 5px;
+    border-radius: 5px; 
     width: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
     position: absolute;
     top:60px;
     right: 14px;
-    z-index: 2;
+    z-index: 1;
     color: black;
 }
 .header-search-bar button:hover{

@@ -12,12 +12,14 @@
 }
 .popup_inner {
   position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 150px;
-  bottom: 180px;
+   
+  width: 500px;
+  height: 550px;
+  top: 100px;
   margin: auto;
   background: white;
+     left: 50%;
+    margin-left: -250px;
 }
 
 .popup .body-title{

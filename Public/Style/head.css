@@ -126,3 +126,19 @@ input{
     top: 63;
     left: 10;
 }
+
+@media screen and (max-width: 40em) {
+    .header{
+        height: 700px;
+    }
+    .header-large-text{
+        font-size: 70px;
+        margin-top: 55px;
+    }
+    .header-small-text{
+        font-size: 30px;
+    }
+    .header-search-bar{
+        width: 80%;
+    }
+}

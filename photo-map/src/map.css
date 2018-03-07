@@ -1,3 +1,13 @@
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;    
+}
+
 .map-container{
+    overflow: hidden;
+    border-radius: 5px;
     height: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }

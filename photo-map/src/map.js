@@ -1,30 +1,22 @@
 import React, { Component } from 'react';
-import './map.css';
-//import './Login.css';
-/**
- *  Login component is the popup
- *  used for signing in.
- */
-class Map extends Component{
-    constructor(props){
-        super(props);
-        //document.write("<script async defer src='" + mapSrc + "'>" + "<" + "/script>");
-        this.state = {
-            text:"Say something here"
-        }
-    }
-    
+import GoogleMapReact from 'google-map-react';
+import './Map.css';
 
+class Map extends Component {
+    static defaultProps = {
+        center: {lat:37.765883, lng:-122.478245},
+        zoom: 11
+    };
     
-    render(){
+    render() {
         return (
-            <div className="content">
-                <div class="body-title">{this.props.text}</div>
-                <div class="map-container">
-                    <div id="map"></div>
-                </div>
+            <div className="map-container">
+                <GoogleMapReact
+                defaultCenter={this.props.center}
+                defaultZoom={this.props.zoom}
+            />
             </div>
-    );
+        );
     }
 }
 

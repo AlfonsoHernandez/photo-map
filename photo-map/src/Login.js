@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Login.css';
-
+/**
+ *  Login component is the popup
+ *  used for signing in.
+ */
 class Login extends Component{
     render(){
         return (

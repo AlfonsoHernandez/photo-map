@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './header';
+import Map from './map'
 /**
  *  Main component that renders all 
  *  components
@@ -7,7 +8,10 @@ import Header from './header';
 class App extends Component {
   render() {
     return (
-      <Header />
+      <div className="test">
+        <Header />
+        <Map text="Explore popular locations."/>
+      </div>
     );
   }
 }

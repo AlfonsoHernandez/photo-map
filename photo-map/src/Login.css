@@ -1,60 +1,63 @@
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: rgba(0,0,0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
+
 .popup_inner {
-  position: absolute;
-   
-  width: 500px;
-  height: 550px;
-  top: 100px;
-  margin: auto;
-  background: white;
-     left: 50%;
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    top: 100px;
+    margin: auto;
+    background: white;
+    left: 50%;
     margin-left: -250px;
 }
 
-.popup .body-title{
+.popup .body-title {
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-.popup img{
+.popup img {
     margin-top: 10px;
     width: 40px;
     float: left;
     margin-left: 20px;
 }
-.popup img:hover{
+
+.popup img:hover {
     cursor: pointer;
 }
 
-.popup input{
+.popup input {
     height: 50px;
     border-radius: 2px;
     width: 88%;
     font-size: 20px;
     font-weight: 200;
 }
-.popup input[type=text], input[type=password]{
-    padding:0px 10px;
+
+.popup input[type=text],
+input[type=password] {
+    padding: 0px 10px;
 }
 
-.popup a{
+.popup a {
     color: steelblue;
     text-decoration: none;
     font-size: 14px;
 }
 
-.popup button{
+.popup button {
     width: 88%;
     height: 50px;
     font-size: 20px;
@@ -73,8 +76,18 @@
     margin-left: 5px;
 }
 
-#oauth img{
+#oauth img {
     width: 25px;
     margin-top: 0px;
     margin-right: -20px;
+}
+
+@media screen and (max-width: 40em) {
+    .popup_inner {
+        width: 400px;
+        margin-left: -200px;
+    }
+    #oauth{
+        width: 180px;
+    }
 }

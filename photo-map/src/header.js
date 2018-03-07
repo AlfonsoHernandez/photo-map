@@ -26,7 +26,7 @@ class Header extends Component{
             <div className="nav-container">
                 <div className="nav">
                     <button onClick={this.toggleLogin.bind(this)}>Log In</button>
-                    <a href="#">Sign Up</a>
+                    <button>Sign Up</button>
                 </div>
             </div>
             <div className="header-large-text">

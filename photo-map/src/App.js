@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './header';
-import Map from './map'
+import Map from './Map';
 /**
  *  Main component that renders all 
  *  components
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="test">
         <Header />
-        <Map text="Explore popular locations."/>
+        <Map />
       </div>
     );
   }

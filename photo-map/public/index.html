@@ -16,14 +16,20 @@
 <body>
     <div id="head">
     </div>
-    <div class="content">
-        <div class="body-title">
-            Explore popular locations
-        </div>
-        <div class="map-container">
-            <div id="map"></div>
-        </div>
-    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAGKn9uWHafhNzHAlOSId47pLirM51AnuU",
+            authDomain: "photo-map-1520054504659.firebaseapp.com",
+            databaseURL: "https://photo-map-1520054504659.firebaseio.com",
+            projectId: "photo-map-1520054504659",
+            storageBucket: "photo-map-1520054504659.appspot.com",
+            messagingSenderId: "154016726606"
+        };
+        firebase.initializeApp(config);
+
+    </script>
     <script>
         var map;
         document.write("<script async defer src='" + mapSrc + "'>" + "<" + "/script>");

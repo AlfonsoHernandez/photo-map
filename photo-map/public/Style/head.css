@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.header{
+
+.header {
     background: url(https://s3-us-west-1.amazonaws.com/maxhdz.com/fort-funston.jpg) top center;
     background-size: cover;
     text-align: center;
@@ -10,50 +11,57 @@ body{
     height: 600px;
 }
 
-.logo-container{
+.logo-container {
     text-align: left;
     width: 50%;
     display: inline-block;
 }
-.logo{
+
+.logo {
     margin-top: 10px;
     text-align: center;
     width: 160px;
 }
-.head-title{
+
+.head-title {
     font-size: 25px;
     font-family: 'Pacifico', cursive;
 }
-.head-sub{
-    font-size:16px;
+
+.head-sub {
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
 }
 
-.head-sub span{
+.head-sub span {
     font-size: 13px;
 }
 
-.nav-container{
+.nav-container {
     width: 49%;
     display: inline-block;
     margin: auto;
     text-align: right;
     vertical-align: top;
 }
-.nav{
+
+.nav {
     margin: auto;
-    margin-right:30px;
+    margin-right: 35px;
     margin-top: 25px;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
     color: black;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 16px;
+    background: red;
 }
-.nav button{
+
+.nav button {
     color: black;
     margin-left: 10px;
     margin-right: 10px;
@@ -61,11 +69,12 @@ body{
     border: none;
     background: none;
 }
-.nav button:hover{
+
+.nav button:hover {
     cursor: pointer;
 }
 
-.header-large-text{
+.header-large-text {
     font-size: 80px;
     margin-top: 130px;
     font-size: 80px;
@@ -73,15 +82,17 @@ body{
     margin-right: 10px;
 }
 
-.header-small-text{
+.header-small-text {
     font-size: 40px;
     margin-top: 20px;
 }
-input{
+
+input {
     border-radius: 5px;
     border: solid 1px gray;
 }
-.header-search-bar input{
+
+.header-search-bar input {
     width: 100%;
     height: 60px;
     margin-top: 50px;
@@ -91,36 +102,40 @@ input{
 }
 
 
-.header-search-bar input[type=text]{
-    padding:0px 60px;
+.header-search-bar input[type=text] {
+    padding: 0px 60px;
 }
 
-#header-search::placeholder{
+#header-search::placeholder {
     color: gray;
 }
-.header-search-bar{
+
+.header-search-bar {
     width: 600px;
     margin: auto;
     position: relative;
 }
-.header-search-bar button{
+
+.header-search-bar button {
     font-size: 18px;
     border: none;
     background: #bdebd7;
-    border-radius: 5px; 
+    border-radius: 5px;
     width: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
     position: absolute;
-    top:60px;
+    top: 60px;
     right: 14px;
     z-index: 1;
     color: black;
 }
-.header-search-bar button:hover{
-    cursor:pointer;
+
+.header-search-bar button:hover {
+    cursor: pointer;
 }
-.header-search-bar img{
+
+.header-search-bar img {
     position: absolute;
     width: 35px;
     top: 63;
@@ -128,17 +143,30 @@ input{
 }
 
 @media screen and (max-width: 40em) {
-    .header{
+    .header {
         height: 700px;
     }
-    .header-large-text{
+    .header-large-text {
         font-size: 70px;
         margin-top: 55px;
     }
-    .header-small-text{
+    .header-small-text {
         font-size: 30px;
     }
-    .header-search-bar{
-        width: 80%;
+    .header-search-bar {
+        width: 90%;
     }
-} 
+    .header-search-bar button {
+        width: 80px;
+    }
+    .logo-container{
+        width: 42%;
+    }
+    .nav-container{
+        width: 55%;
+    }
+    .nav button{
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+}

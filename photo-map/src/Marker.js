@@ -4,7 +4,7 @@ import './Marker.css';
 class Marker extends Component {
     render() {
         return (
-            <div><img src={require("./Assets/marker.png")} alt="Marker"/></div>
+            <div><img id="marker" src={require("./Assets/marker.png")} alt="Marker"/></div>
         );
     }
 }

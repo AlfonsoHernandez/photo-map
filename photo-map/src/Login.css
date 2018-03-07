@@ -86,6 +86,7 @@ input[type=password] {
     .popup_inner {
         width: 400px;
         margin-left: -200px;
+        top: 50px;
     }
     #oauth{
         width: 180px;

@@ -30,46 +30,7 @@
         firebase.initializeApp(config);
 
     </script>
-    <script>
-        var map;
-        document.write("<script async defer src='" + mapSrc + "'>" + "<" + "/script>");
-
-        function initMap() {
-            var goldenGateBridge = {
-                lat: 37.819708,
-                lng: -122.478245
-            };
-            var fortFunston = {
-                lat: 37.719056,
-                lng: -122.504386
-            };
-            var muralAlley = {
-                lat: 37.762972,
-                lng: -122.421111
-            };
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 11,
-                center: new google.maps.LatLng(37.765883, -122.478245),
-                mapTypeId: 'roadmap',
-                streetViewControl: false,
-                mapTypeControl: false
-            });
-
-            var marker = new google.maps.Marker({
-                position: goldenGateBridge,
-                map: map
-            });
-            var markerFort = new google.maps.Marker({
-                position: fortFunston,
-                map: map
-            });
-            var markerMural = new google.maps.Marker({
-                position: muralAlley,
-                map: map
-            });
-        }
-
-    </script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGKn9uWHafhNzHAlOSId47pLirM51AnuU&amp;callback=initMap"></script>
 </body>
 
 </html>

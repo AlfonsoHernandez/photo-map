@@ -8,8 +8,18 @@ class Map extends Component {
         center: {lat:37.765883, lng:-122.478245},
         zoom: 11
     };
-    
+
     render() {
+          let markers;
+          if(this.props.mapMarkers){
+            markers = this.props.mapMarkers.map(marker => {
+              return(
+                <Marker lat={marker.lat} lng={marker.lng} />
+              );
+            });
+          }
+
+
         return (
             <div className="map-container">
                 <GoogleMapReact
@@ -17,10 +27,7 @@ class Map extends Component {
                 defaultCenter={this.props.center}
                 defaultZoom={this.props.zoom}
             >
-                <Marker
-                    lat={37.8199}
-                    lng={-122.4783}
-                />
+              {markers}
             </GoogleMapReact>
             </div>
         );

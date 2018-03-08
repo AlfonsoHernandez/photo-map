@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import Login from './Login';
+import Signup from './Signup';
 import './header.css';
 
 class Header extends Component{
     constructor(){
         super();
         this.state = {
-            showLogin: false
+            showLogin: false,
+            showSignup: false
         };
     }
-    
+
     toggleLogin() {
         this.setState({
             showLogin: !this.state.showLogin
         });
     }
-    
+
+    toggleSignup() {
+        this.setState({
+            showSignup: !this.state.showSignup
+        });
+    }
+
     render() {
         return (
         <div className="header">
@@ -27,7 +35,7 @@ class Header extends Component{
             <div className="nav-container">
                 <div className="nav">
                     <button onClick={this.toggleLogin.bind(this)}>Log In</button>
-                    <button>Sign Up</button>
+                    <button onClick={this.toggleSignup.bind(this)}>Sign Up</button>
                 </div>
             </div>
             <div className="header-large-text">
@@ -41,10 +49,17 @@ class Header extends Component{
                 <img src="Icons/search.png" className="search-icon" />
                 <button onclick="alert('search')">Search</button>
             </div>
-            {this.state.showLogin ? 
+            {this.state.showLogin ?
                 <Login
                 text='Close Me'
                 closePopup={this.toggleLogin.bind(this)}
+          />
+          : null
+        }
+            {this.state.showSignup ?
+                <Signup
+                text='Close Me'
+                closePopup={this.toggleSignup.bind(this)}
           />
           : null
         }

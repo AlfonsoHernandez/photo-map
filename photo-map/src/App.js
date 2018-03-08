@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './header';
-import FrontContent from './FrontContent';
+import Header from './Components/header';
+import FrontContent from './Components/FrontContent';
 /**
  *  Main component that renders all
  *  components

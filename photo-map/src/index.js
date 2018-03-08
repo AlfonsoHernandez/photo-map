@@ -5,8 +5,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 /**
  *  Main file that will take care of rendering
- *  everything on the top level. 
+ *  everything on the top level.
  */
 
-ReactDOM.render(<App />, document.getElementById('head'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

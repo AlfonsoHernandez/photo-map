@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Components/header';
 import FrontContent from './Components/FrontContent';
+import TitleWindow from './Components/TitleWindow';
 /**
  *  Main component that renders all
  *  components
@@ -9,8 +9,9 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      mapMarkers: {}
-    }
+      mapMarkers: {},
+      authUser:null,
+    };
   }
 
   componentWillMount(){
@@ -31,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="test">
-        <Header />
+        <TitleWindow authUser={this.state.authUser} />
         <FrontContent  markers={this.state.mapMarkers} />
       </div>
     );

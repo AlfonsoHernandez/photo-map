@@ -4,7 +4,6 @@ import './FrontContent.css';
 
 class FrontContent extends Component {
     render() {
-      console.log("Marker: " + this.props.markers)
         return (
             <div className="front-page-content">
                 <div className="front-title">

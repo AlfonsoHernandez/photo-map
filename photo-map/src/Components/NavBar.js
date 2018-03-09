@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Login from './Login';
 import Signup from './Signup';
-import './header.css';
+import './navbar.css';
 
-class Header extends Component{
+class NavBar extends Component{
     constructor(){
         super();
         this.state = {
@@ -28,8 +28,8 @@ class Header extends Component{
         return (
         <div className="header">
             <div className="logo-container">
-                <div class="logo">
-                    <div class="head-title">PhotoMap</div>
+                <div className="logo">
+                    <div className="head-title">PhotoMap</div>
                 </div>
             </div>
             <div className="nav-container">
@@ -37,17 +37,6 @@ class Header extends Component{
                     <button onClick={this.toggleLogin.bind(this)}>Log In</button>
                     <button onClick={this.toggleSignup.bind(this)}>Sign Up</button>
                 </div>
-            </div>
-            <div className="header-large-text">
-                Travel. Shoot. Share.
-            </div>
-            <div className="header-small-text">
-                Discover your next adventure.
-            </div>
-            <div className="header-search-bar">
-                <input id="header-search" type="text" placeholder="Try &quot;San Francisco&quot;" />
-                <img src="Icons/search.png" className="search-icon" />
-                <button onclick="alert('search')">Search</button>
             </div>
             {this.state.showLogin ?
                 <Login
@@ -64,8 +53,9 @@ class Header extends Component{
           : null
         }
         </div>
-        )
+      );
     }
+
 }
 
-export default Header;
+export default NavBar;

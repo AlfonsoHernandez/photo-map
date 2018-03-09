@@ -1,0 +1,91 @@
+.title-window{
+  background: url(https://s3-us-west-1.amazonaws.com/maxhdz.com/fort-funston.jpg) top center;
+  height: 600px;
+  text-align: center;
+  background-size: cover;
+}
+
+
+.header-large-text {
+    font-size: 80px;
+    margin-top: 0px;
+    font-size: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-small-text {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+input {
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.header-search-bar input {
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 16px;
+    border: none;
+
+}
+
+
+.header-search-bar input[type=text] {
+    padding: 0px 60px;
+}
+
+#header-search::placeholder {
+    color: gray;
+}
+
+.header-search-bar {
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.header-search-bar button {
+    font-size: 18px;
+    border: none;
+    background: #bdebd7;
+    border-radius: 5px;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 60px;
+    right: 14px;
+    z-index: 1;
+    color: black;
+}
+
+.header-search-bar button:hover {
+    cursor: pointer;
+}
+
+.header-search-bar img {
+    position: absolute;
+    width: 35px;
+    top: 63;
+    left: 10;
+}
+
+@media screen and (max-width: 40em) {
+    .header-large-text {
+        font-size: 70px;
+        margin-top: 55px;
+    }
+    .header-small-text {
+        font-size: 30px;
+    }
+    .header-search-bar {
+        width: 90%;
+    }
+    .header-search-bar button {
+        width: 80px;
+    }
+}

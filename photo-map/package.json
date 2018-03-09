@@ -1,0 +1,32 @@
+{
+  "name": "photo-map",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "build": "^0.1.4",
+    "google-map-react": "^0.32.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-scripts": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "PhotoMap",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "Max Hernandez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfonsoHernandez/Photo-Map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlfonsoHernandez/Photo-Map/issues"
+  },
+  "homepage": "https://photo-map-1520054504659.firebaseapp.com/"
+}

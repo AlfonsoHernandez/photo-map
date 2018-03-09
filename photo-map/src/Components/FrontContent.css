@@ -1,0 +1,13 @@
+.front-title{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.front-page-content{
+    margin: auto;
+    width: 88%;
+    min-width: 300px;
+    max-width: 1200px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}

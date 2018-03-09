@@ -6,6 +6,7 @@
     "build": "^0.1.4",
     "firebase": "^4.11.0",
     "google-map-react": "^0.32.0",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",

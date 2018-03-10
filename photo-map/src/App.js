@@ -25,6 +25,11 @@ class App extends Component {
         name: 'Fort Funston',
         lat: 37.7195,
         lng: -122.5028
+      },
+      {
+        name: 'Redwood Regional Park',
+        lat: 37.8139,
+        lng: -122.1661
       }
     ]});
   }

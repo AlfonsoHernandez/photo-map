@@ -9,15 +9,15 @@ class TitleWindow extends Component {
             <NavBar />
             <div className="header-large-text">
                 Travel. Shoot. Share.
-              </div>
+            </div>
             <div className="header-small-text">
                 Discover your next adventure.
-              </div>
+            </div>
             <div className="header-search-bar">
                 <input id="header-search" type="text" placeholder="Try &quot;San Francisco&quot;" />
                 <img src="Icons/search.png" className="search-icon" />
                 <button>Search</button>
-              </div>
+            </div>
           </div>
         );
     }
